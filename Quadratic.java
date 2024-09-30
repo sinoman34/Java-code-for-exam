@@ -6,11 +6,11 @@ public class Quadratic
         Scanner input = new Scanner(System.in);
         // take 3 input from user-->
         System.out.print("a = ");
-        double a = input.nextInt();
+        double a = input.nextDouble();
         System.out.print("b = ");
-        double b = input.nextInt();
+        double b = input.nextDouble();
         System.out.print("c = ");
-        double c = input.nextInt();
+        double c = input.nextDouble();
 
         double d = (b * b) - (4 * a * c);
         
@@ -20,7 +20,7 @@ public class Quadratic
             System.out.println("Roots are X1 = "+x1 + "  X2 = "+x2);
         }
         else if (d == 0){
-            double x = -b / 2 * a;
+            double x = -b / (2 * a);
             System.out.println("Root is X = "+x);
         }
         else {
